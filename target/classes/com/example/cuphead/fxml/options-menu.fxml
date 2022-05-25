@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.cuphead.view.OptionsMenu"  style="-fx-max-height: 720; -fx-max-width: 1280; -fx-pref-height: 720; -fx-pref-width: 1280;
+             -fx-background-image: url(com/example/cuphead/images/leaderboard.jpg);
+              -fx-background-size: 100% 100%">
+    <ToggleButton  fx:id="muteCheckBox" onAction="#mute" layoutX="40" layoutY="200.0" text="mute"/>
+    <TilePane layoutX="30" layoutY="160.0">
+        <RadioButton onAction="#difficulty" fx:id="easy" layoutX="10" layoutY="60.0" text="easy"/>
+        <RadioButton onAction="#difficulty" fx:id="normal"  layoutX="10" layoutY="40.0" text="normal"/>
+        <RadioButton onAction="#difficulty" fx:id="hard"  layoutX="10" layoutY="20.0" text="hard"/>
+    </TilePane>
+    <Button onMouseClicked="#back" layoutX="1160" layoutY="10.0" mnemonicParsing="false"
+            prefHeight="25.0" prefWidth="100.0" text="back"/>
+
+
+</AnchorPane>

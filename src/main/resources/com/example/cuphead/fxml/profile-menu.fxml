@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.cuphead.view.ProfileMenuController"
+            prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-image: url(com/example/cuphead/images/WallpaperDog-922153.jpg);
+              -fx-background-size: 100% 100%">
+    <Button fx:id="profile" onMouseEntered="#profileGif"
+            onMouseExited="#profileImage" layoutX="100" layoutY="20.0" mnemonicParsing="false"
+            prefHeight="200.0" prefWidth="200.0"/>
+    <Button fx:id="f1" onMouseClicked="#setProfile" layoutX="20" layoutY="250.0" mnemonicParsing="false"
+            prefHeight="100.0" prefWidth="100.0"/>
+    <Button fx:id="f2" onMouseClicked="#setProfile" layoutX="130" layoutY="250.0" mnemonicParsing="false"
+            prefHeight="100.0" prefWidth="100.0"/>
+    <Button fx:id="f3" onMouseClicked="#setProfile" layoutX="240" layoutY="250.0" mnemonicParsing="false"
+            prefHeight="100.0" prefWidth="100.0"/>
+    <Button fx:id="f4" onMouseClicked="#setProfile" layoutX="20" layoutY="360.0" mnemonicParsing="false"
+            prefHeight="100.0" prefWidth="100.0"/>
+    <Button fx:id="m1" onMouseClicked="#setProfile" layoutX="130" layoutY="360.0" mnemonicParsing="false"
+            prefHeight="100.0" prefWidth="100.0"/>
+    <Button fx:id="m2" onMouseClicked="#setProfile" layoutX="240" layoutY="360.0" mnemonicParsing="false"
+            prefHeight="100.0" prefWidth="100.0"/>
+    <Button fx:id="m3" onMouseClicked="#setProfile" layoutX="20" layoutY="470.0" mnemonicParsing="false"
+            prefHeight="100.0" prefWidth="100.0"/>
+    <Button fx:id="o" onMouseClicked="#setProfile" layoutX="130" layoutY="470.0" mnemonicParsing="false"
+            prefHeight="100.0" prefWidth="100.0"/>
+    <TextField fx:id="username" layoutX="550" layoutY="100.0" promptText="Username"/>
+    <PasswordField fx:id="newPassword" layoutX="550" layoutY="160.0" promptText="Password"/>
+    <PasswordField fx:id="oldPassword" layoutX="550" layoutY="220.0" promptText="Password"/>
+    <Label layoutX="350" layoutY="90.0" prefHeight="26.0" prefWidth="200.0" text="username :" style="-fx-text-fill: yellow">
+        <font>
+            <Font size="25.0"/>
+        </font>
+    </Label>
+    <Label layoutX="350" layoutY="150.0" prefHeight="26.0" prefWidth="200.0" text="new password :" style="-fx-text-fill: yellow">
+        <font>
+            <Font size="25.0"/>
+        </font>
+    </Label>
+    <Label layoutX="350" layoutY="210.0" prefHeight="26.0" prefWidth="200.0" text="old password :" style="-fx-text-fill: yellow" >
+        <font>
+            <Font size="25.0"/>
+        </font>
+    </Label>
+    <Button onMouseClicked="#changeUserData" layoutX="550" layoutY="300.0" mnemonicParsing="false"
+            prefHeight="25.0" prefWidth="100.0" text="confirm"/>
+    <Button onMouseClicked="#exit" layoutX="550" layoutY="380.0" mnemonicParsing="false"
+            prefHeight="25.0" prefWidth="100.0" text="logout"/>
+    <Button onMouseClicked="#back" layoutX="1160" layoutY="10.0" mnemonicParsing="false"
+            prefHeight="25.0" prefWidth="100.0" text="back"/>
+    <Button onMouseClicked="#delete" layoutX="550" layoutY="340.0" mnemonicParsing="false"
+            prefHeight="25.0" prefWidth="100.0" text="Delete" style="-fx-text-fill: red"/>
+    <Label fx:id="errorBox" layoutX="500" layoutY="500.0" prefHeight="26.0" prefWidth="250.0" style="-fx-text-fill: red">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+
+
+
+
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.cuphead.view.LeaderboardController"
+            prefHeight="720.0" prefWidth="1280.0" style="-fx-background-image: url(com/example/cuphead/images/leaderboard.jpg);
+              -fx-background-size: 100% 100%">
+    <Label fx:id="p1" layoutX="10" layoutY="10.0" prefHeight="30.0"  prefWidth="1000.0"  style="-fx-text-fill: #6b009b" >
+        <font>
+            <Font size="23.0"/>
+        </font>
+    </Label>
+    <Label fx:id="p2" layoutX="10" layoutY="40.0" prefHeight="30.0" prefWidth="1000.0"  style="-fx-text-fill: #757883" >
+        <font>
+            <Font size="23.0"/>
+        </font>
+    </Label>
+    <Label fx:id="p3" layoutX="10" layoutY="70.0" prefHeight="30.0" prefWidth="1000.0"  style="-fx-text-fill: #b66c24" >
+        <font>
+            <Font size="23.0"/>
+        </font>
+    </Label>
+    <Label fx:id="p4" layoutX="10" layoutY="100.0" prefHeight="30.0" prefWidth="1000.0"  style="-fx-text-fill: #311b1b" >
+        <font>
+            <Font size="23.0"/>
+        </font>
+    </Label>
+    <Label fx:id="p5" layoutX="10" layoutY="130.0" prefHeight="30.0" prefWidth="1000.0"  style="-fx-text-fill: #311b1b" >
+        <font>
+            <Font size="23.0"/>
+        </font>
+    </Label>
+    <Label fx:id="p6" layoutX="10" layoutY="160.0" prefHeight="30.0" prefWidth="1000.0"  style="-fx-text-fill: #311b1b" >
+        <font>
+            <Font size="23.0"/>
+        </font>
+    </Label>
+    <Label fx:id="p7" layoutX="10" layoutY="190.0" prefHeight="30.0" prefWidth="1000.0"  style="-fx-text-fill: #311b1b" >
+        <font>
+            <Font size="23.0"/>
+        </font>
+    </Label>
+    <Label fx:id="p8" layoutX="10" layoutY="220.0" prefHeight="30.0" prefWidth="1000.0"  style="-fx-text-fill: #311b1b" >
+        <font>
+            <Font size="23.0"/>
+        </font>
+    </Label>
+    <Label fx:id="p9" layoutX="10" layoutY="250.0" prefHeight="30.0" prefWidth="1000.0"  style="-fx-text-fill: #311b1b" >
+        <font>
+            <Font size="23.0"/>
+        </font>
+    </Label>
+    <Label fx:id="p10" layoutX="10" layoutY="270.0" prefHeight="30.0" prefWidth="1000.0"  style="-fx-text-fill: #311b1b" >
+        <font>
+            <Font size="23.0"/>
+        </font>
+    </Label>
+    <Button fx:id="normal" onMouseClicked="#changeDifficulty" layoutX="50" layoutY="600.0" mnemonicParsing="false"
+            prefHeight="25.0" prefWidth="100.0" text="normal"/>
+    <Button fx:id="devil1" onMouseClicked="#changeDifficulty" layoutX="160" layoutY="600.0" mnemonicParsing="false"
+            prefHeight="25.0" prefWidth="100.0" text="devil 1"/>
+    <Button fx:id="devil2" onMouseClicked="#changeDifficulty" layoutX="270" layoutY="600.0" mnemonicParsing="false"
+            prefHeight="25.0" prefWidth="100.0" text="devil 2"/>
+    <Button onMouseClicked="#back" layoutX="1160" layoutY="10.0" mnemonicParsing="false"
+            prefHeight="25.0" prefWidth="100.0" text="back"/>
+
+
+</AnchorPane>

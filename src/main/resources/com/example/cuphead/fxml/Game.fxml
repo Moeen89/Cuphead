@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="pane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.cuphead.view.GameViewController"
+            prefHeight="720.0" prefWidth="1280.0">
+    <ImageView fx:id="background1"  fitHeight="730.0" fitWidth="3240.0">
+        <Image  url="@/com/example/cuphead/images/image_2022-05-16_16-29-54.png"/>
+    </ImageView>
+    <ImageView fx:id="background2" fitHeight="730.0" fitWidth="3240.0" layoutX="3240">
+        <Image  url="@/com/example/cuphead/images/image_2022-05-16_16-29-54.png"/>
+    </ImageView>
+    <ProgressBar fx:id="progress" layoutX="100" layoutY="690" prefWidth="1080" prefHeight="40"/>
+    <Label fx:id="bossHp" layoutX="590" layoutY="690" prefWidth="300" text="100" style="-fx-text-fill: green"/>
+
+</AnchorPane>
